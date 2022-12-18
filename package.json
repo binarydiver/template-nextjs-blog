@@ -2,11 +2,14 @@
   "name": "play-nextjs-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://binarydiver.github.io/play-nextjs-blog",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@next/font": "13.0.7",
@@ -19,5 +22,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
