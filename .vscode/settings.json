@@ -1,3 +1,4 @@
 {
-  "cSpell.enableFiletypes": ["!json", "!yaml"]
+  "cSpell.enableFiletypes": ["!json", "!yaml"],
+  "cSpell.words": ["nextjs", "tailwindcss", "unoptimized"]
 }
