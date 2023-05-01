@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "../styles/Home.module.css";
-import getConfig from "next/config";
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from '../styles/Home.module.css';
+import getConfig from 'next/config';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 const { assetPrefix } = getConfig().publicRuntimeConfig;
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{" "}
+              By{' '}
               <Image
                 src={`${assetPrefix}/vercel.svg`}
                 alt="Vercel Logo"
