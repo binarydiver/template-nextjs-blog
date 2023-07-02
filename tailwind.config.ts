@@ -1,4 +1,7 @@
 import type { Config } from 'tailwindcss';
+import typography from '@tailwindcss/typography';
+
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
   content: [
@@ -9,7 +12,12 @@ export default {
   // Toggle dark-mode based on data-mode="dark"
   darkMode: ['class', '[data-mode="dark"]'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Noto Sans KR', ...defaultTheme.fontFamily.sans],
+        serif: ['Noto Serif KR', ...defaultTheme.fontFamily.serif],
+      },
+    },
   },
-  plugins: [],
+  plugins: [typography],
 } as Config;

@@ -1,4 +1,10 @@
 {
   "cSpell.enableFiletypes": ["!json", "!yaml"],
-  "cSpell.words": ["nextjs", "tailwindcss", "unoptimized"]
+  "cSpell.words": [
+    "binarydiver",
+    "nextjs",
+    "Noto",
+    "tailwindcss",
+    "unoptimized"
+  ]
 }
