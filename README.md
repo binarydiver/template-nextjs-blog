@@ -1,1 +1,1 @@
-# Playground Blog with Next.js
+# Template for Blog with Next.js

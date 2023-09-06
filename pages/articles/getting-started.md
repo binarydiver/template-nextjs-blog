@@ -1,6 +1,7 @@
 ---
 title: Get started with Markdoc
 description: How to get started with Markdoc
+writeAt: '2023-09-06'
 ---
 
 # Aliquam profecti anguem medio crepitantia unda poenaeque

@@ -9,8 +9,7 @@ export default {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
   ],
-  // Toggle dark-mode based on data-mode="dark"
-  darkMode: ['class', '[data-mode="dark"]'],
+  darkMode: ['class'],
   theme: {
     extend: {
       fontFamily: {
