@@ -12,6 +12,7 @@
     "deploy": "gh-pages -t -d out"
   },
   "dependencies": {
+    "@giscus/react": "^3.0.0",
     "@markdoc/markdoc": "^0.4.0",
     "@markdoc/next.js": "^0.3.7",
     "eslint": "^8.57.0",
