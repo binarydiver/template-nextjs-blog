@@ -6,11 +6,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
   pageExtensions: ['md', 'mdoc', 'js', 'jsx', 'ts', 'tsx'],
-  reactStrictMode: true,
   publicRuntimeConfig: {
     assetPrefix: isProd ? '/template-nextjs-blog' : '',
   },
+  reactStrictMode: true,
 };
 
 const withMarkdoc = require('@markdoc/next.js');
