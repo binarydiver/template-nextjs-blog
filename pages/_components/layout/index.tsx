@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { FC } from 'react';
-import { BLOG_TITLE } from '../../pages/_lib/constants';
+import { BLOG_TITLE } from '../../_lib/constants';
 import Footer from '../footer';
 import Navigation from '../navigation';
 

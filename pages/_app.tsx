@@ -3,8 +3,8 @@ import { MarkdocNextJsPageProps } from '@markdoc/next.js';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
-import Layout from '../components/layout';
 import '../styles/globals.css';
+import Layout from './_components/layout';
 import { BLOG_TITLE } from './_lib/constants';
 
 export type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {
