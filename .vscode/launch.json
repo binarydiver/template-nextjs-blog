@@ -18,6 +18,11 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "pnpm run dev",
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**",
+        "!**/.next/**"
+      ],
       "serverReadyAction": {
         "pattern": "- Local:.+(https?://.+)",
         "uriFormat": "%s",
