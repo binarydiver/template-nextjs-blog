@@ -92,3 +92,5 @@ const Home = (props: HomeProps) => {
 };
 
 export default Home;
+
+export const revalidate = 3600;

@@ -27,3 +27,5 @@ const Layout: FC<LayoutProps> = props => {
 };
 
 export default Layout;
+
+export const revalidate = 3600;
