@@ -1,7 +1,8 @@
 ---
 title: Lorem Markdoc 2
 description: Placeholder Markdoc
-writeAt: '2023-09-06'
+writtenAt: '2023-09-06'
+updatedAt: '2023-09-06'
 ---
 
 # Temptat prodis ferro discedere quae

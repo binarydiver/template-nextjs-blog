@@ -1,7 +1,8 @@
 ---
 title: Lorem Markdoc 1
 description: Placeholder Markdoc
-writeAt: '2023-09-06'
+writtenAt: '2023-09-06'
+updatedAt: '2023-09-06'
 ---
 
 # Peucetiosque satis quam inscius omni fraudem exsiluisse

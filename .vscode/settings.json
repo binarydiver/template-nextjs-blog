@@ -8,5 +8,8 @@
     "Noto",
     "tailwindcss",
     "unoptimized"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
 }
