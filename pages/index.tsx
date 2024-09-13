@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GetStaticProps } from 'next/types';
 import path from 'path';
+import { BLOG_TITLE } from './_lib/constants';
 
 type ArticleMatter = {
   title: string;
@@ -59,9 +60,8 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <Head>
-        <title>Next.js Blog Template</title>
+        <title>{BLOG_TITLE}</title>
         <meta name="description" content="Next.js Blog Template Website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <ul
@@ -69,7 +69,7 @@ const Home = (props: HomeProps) => {
         className="divide-y divide-slate-400 list-none marker:text-slate-300"
       >
         {articleMatters.map(articleMatter => (
-          <li key={articleMatter.slug} className="pt-2">
+          <li key={articleMatter.writtenAt} className="pt-2">
             <Link className="no-underline" href={`${articleMatter.slug}`}>
               <header className="underline underline-offset-4">
                 {articleMatter.coverImagePath && (

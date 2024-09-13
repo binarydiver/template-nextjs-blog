@@ -5,6 +5,7 @@ import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
 import Layout from '../components/layout';
 import '../styles/globals.css';
+import { BLOG_TITLE } from './_lib/constants';
 
 export type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -18,8 +19,10 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ??
     (page => {
+      const title = page.props.markdoc?.frontmatter.title ?? BLOG_TITLE;
+
       return (
-        <Layout>
+        <Layout title={title}>
           {page}
           {page.props.markdoc && (
             <Giscus

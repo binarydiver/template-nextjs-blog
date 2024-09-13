@@ -4,17 +4,15 @@ import withMarkdoc from '@markdoc/next.js';
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
+  assetPrefix: isProd ? '/template-nextjs-blog' : '',
   basePath: isProd ? '/template-nextjs-blog' : '',
   images: {
     unoptimized: true,
   },
   output: 'export',
-  publicRuntimeConfig: {
-    assetPrefix: isProd ? '/template-nextjs-blog' : '',
-  },
   reactStrictMode: true,
-  ...withMarkdoc(/* options */)({
-    pageExtensions: ['md', 'mdoc', 'js', 'jsx', 'ts', 'tsx'],
+  ...withMarkdoc()({
+    pageExtensions: ['md', 'mdoc', 'jsx', 'tsx'],
   }),
 };
 

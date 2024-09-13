@@ -2,6 +2,7 @@
   "cSpell.enableFiletypes": ["!json", "!yaml"],
   "cSpell.words": [
     "binarydiver",
+    "frontmatter",
     "giscus",
     "markdoc",
     "nextjs",
