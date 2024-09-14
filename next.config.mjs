@@ -14,6 +14,7 @@ const nextConfig = {
   ...withMarkdoc({ mode: 'static' })({
     pageExtensions: ['md', 'mdoc', 'jsx', 'tsx'],
   }),
+  trailingSlash: true,
   async headers() {
     return [
       {

@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     return {
       title,
       description,
-      coverImagePath: coverImageName ? `/${slug}/${coverImageName}` : null,
+      coverImagePath: coverImageName ? `./${slug}/${coverImageName}` : null,
       slug,
       writtenAt,
       updatedAt,
