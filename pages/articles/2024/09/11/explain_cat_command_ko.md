@@ -32,5 +32,3 @@ updatedAt: '2024-09-11 11:00'
 `cat - > {{경로/대상/파일}}`
 
 > _src. <https://github.com/tldr-pages/tldr/blob/main/pages.ko/common/cat.md>_
-
----

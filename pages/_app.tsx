@@ -24,6 +24,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       return (
         <Layout title={title}>
           {page}
+          <hr />
           {page.props.markdoc && (
             <Giscus
               id="comments"

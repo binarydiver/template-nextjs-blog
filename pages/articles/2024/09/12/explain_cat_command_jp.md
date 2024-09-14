@@ -32,5 +32,3 @@ updatedAt: '2024-09-12 12:00'
 `cat - > {{ファイルパス}}`
 
 > _src. <https://github.com/tldr-pages/tldr/blob/main/pages.ja/common/cat.md>_
-
----
