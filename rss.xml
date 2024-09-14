@@ -9,9 +9,9 @@
             <link>https://binarydiver.github.io/template-nextjs-blog/</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 14 Sep 2024 07:42:07 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Sep 2024 07:48:18 GMT</lastBuildDate>
         <atom:link href="https://binarydiver.github.io/template-nextjs-blog//rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Sep 2024 07:42:07 GMT</pubDate>
+        <pubDate>Sat, 14 Sep 2024 07:48:18 GMT</pubDate>
         <copyright><![CDATA[Copyright 2024, Author]]></copyright>
         <item>
             <title><![CDATA[Explain cat command in Japanese]]></title>
@@ -21,18 +21,18 @@
             <pubDate>Thu, 12 Sep 2024 03:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Explain cat command in Korean]]></title>
-            <description><![CDATA[Explain cat command in Korean.]]></description>
-            <link>https://binarydiver.github.io/template-nextjs-blog//articles/2024/09/11/explain_cat_command_ko</link>
-            <guid isPermaLink="true">https://binarydiver.github.io/template-nextjs-blog//articles/2024/09/11/explain_cat_command_ko</guid>
-            <pubDate>Wed, 11 Sep 2024 02:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[Explain cat command in English]]></title>
             <description><![CDATA[Explain cat command in English.]]></description>
             <link>https://binarydiver.github.io/template-nextjs-blog//articles/2024/09/10/explain_man_command_en</link>
             <guid isPermaLink="true">https://binarydiver.github.io/template-nextjs-blog//articles/2024/09/10/explain_man_command_en</guid>
             <pubDate>Tue, 10 Sep 2024 01:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Explain cat command in Korean]]></title>
+            <description><![CDATA[Explain cat command in Korean.]]></description>
+            <link>https://binarydiver.github.io/template-nextjs-blog//articles/2024/09/11/explain_cat_command_ko</link>
+            <guid isPermaLink="true">https://binarydiver.github.io/template-nextjs-blog//articles/2024/09/11/explain_cat_command_ko</guid>
+            <pubDate>Wed, 11 Sep 2024 02:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
