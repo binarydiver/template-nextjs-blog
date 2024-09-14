@@ -7,8 +7,9 @@ import Link from 'next/link';
 import { GetStaticProps } from 'next/types';
 import path from 'path';
 import { BLOG_TITLE } from './_lib/constants';
+import generateRssFeed from './_lib/rss';
 
-type ArticleMatter = {
+export type ArticleMatter = {
   title: string;
   description: string;
   coverImagePath: string | null;
@@ -48,6 +49,8 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     };
   });
   articleMatters.sort().reverse();
+
+  generateRssFeed(articleMatters);
 
   return {
     props: {
