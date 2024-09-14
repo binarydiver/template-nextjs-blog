@@ -47,6 +47,8 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       updatedAt,
     };
   });
+  articleMatters.sort().reverse();
+
   return {
     props: {
       articleMatters,
@@ -66,12 +68,13 @@ const Home = (props: HomeProps) => {
 
       <ul role="list" className="divide-y list-none my-2 pe-[1.625rem]">
         {articleMatters.map(articleMatter => (
-          <li key={articleMatter.writtenAt}>
-            <article className="flex py-2">
+          <li className="m-0" key={articleMatter.writtenAt}>
+            <article className="flex py-4 gap-x-4">
               <div>
                 <Link className="no-underline" href={`${articleMatter.slug}`}>
                   {articleMatter.coverImagePath && (
                     <Image
+                      className="m-0"
                       src={articleMatter.coverImagePath}
                       width={200}
                       height={200}

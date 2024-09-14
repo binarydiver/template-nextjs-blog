@@ -29,7 +29,7 @@ const Header = (props: HeaderProps) => {
       <div className="flex-1">
         <button
           type="button"
-          className="text-white bg-gray-300 hover:bg-gray-400 focus:ring-gray-500 focus:outline-none focus:ring-2 font-medium rounded-lg text-4xl px-1.5 pb-1.5 dark:bg-gray-100 dark:hover:dark:bg-gray-400 dark:focus:ring-gray-200"
+          className="text-white bg-gray-300 hover:bg-gray-400 focus:ring-gray-500 focus:outline-none focus:ring-2 font-medium rounded-lg text-4xl px-1.5 pb-1 dark:bg-gray-100 dark:hover:dark:bg-gray-400 dark:focus:ring-gray-200"
           onClick={() => toggleTheme()}
         >
           🌓︎
