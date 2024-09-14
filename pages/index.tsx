@@ -89,7 +89,8 @@ const Home = (props: HomeProps) => {
               <div>
                 <Link className="no-underline" href={`${articleMatter.slug}`}>
                   <header className="underline underline-offset-4">
-                    {articleMatter.writtenAt} :: {articleMatter.title}
+                    {articleMatter.writtenAt.substring(0, 10)} ::{' '}
+                    {articleMatter.title}
                   </header>
                 </Link>
                 <p className="mt-2 mb-0">{articleMatter.description}</p>
