@@ -1,6 +1,7 @@
 ---
-title: Explain cat command in Japanese
-description: Explain cat command in Japanese.
+title: 'Explain cat command in Japanese'
+description: 'Explain cat command in Japanese.'
+coverImageName: 'mikhail-vasilyev-IFxjDdqK_0U-unsplash.jpg'
 writtenAt: '2024-09-12 12:00'
 updatedAt: '2024-09-12 12:00'
 ---
@@ -30,6 +31,6 @@ updatedAt: '2024-09-12 12:00'
 
 `cat - > {{ファイルパス}}`
 
-src. https://github.com/tldr-pages/tldr/blob/main/pages.ja/common/cat.md
+> _src. <https://github.com/tldr-pages/tldr/blob/main/pages.ja/common/cat.md>_
 
 ---

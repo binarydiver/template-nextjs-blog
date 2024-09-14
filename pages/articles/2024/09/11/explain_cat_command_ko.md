@@ -1,6 +1,7 @@
 ---
-title: Explain cat command in Korean
-description: Explain cat command in Korean.
+title: 'Explain cat command in Korean'
+description: 'Explain cat command in Korean.'
+coverImageName: 'ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg'
 writtenAt: '2024-09-11 11:00'
 updatedAt: '2024-09-11 11:00'
 ---
@@ -30,6 +31,6 @@ updatedAt: '2024-09-11 11:00'
 
 `cat - > {{경로/대상/파일}}`
 
-src. https://github.com/tldr-pages/tldr/blob/main/pages.ko/common/cat.md
+> _src. <https://github.com/tldr-pages/tldr/blob/main/pages.ko/common/cat.md>_
 
 ---
