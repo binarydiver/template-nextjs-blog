@@ -69,15 +69,15 @@ const Home = (props: HomeProps) => {
         <meta name="description" content="Next.js Blog Template Website" />
       </Head>
 
-      <ul role="list" className="divide-y list-none my-2 pe-[1.625rem]">
+      <ul role="list" className="divide-y list-none my-2 ps-1 pe-1">
         {articleMatters.map(articleMatter => (
           <li className="m-0" key={articleMatter.writtenAt}>
-            <article className="flex py-4 gap-x-4">
+            <article className="flex py-4">
               <div>
                 <Link className="no-underline" href={`${articleMatter.slug}`}>
                   {articleMatter.coverImagePath && (
                     <Image
-                      className="m-0"
+                      className="m-0 me-4"
                       src={articleMatter.coverImagePath}
                       width={200}
                       height={200}
