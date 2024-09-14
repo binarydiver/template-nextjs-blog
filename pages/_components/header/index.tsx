@@ -1,7 +1,9 @@
-import gitHubIcon from '@/public/github-mark-white.svg';
+import gitHubWhiteIcon from '@/public/github-mark-white.svg';
+import gitHubIcon from '@/public/github-mark.svg';
 import rssIcon from '@/public/rss-512.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 type HeaderProps = {
   title: string;
@@ -9,15 +11,23 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   const { title } = props;
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  useEffect(() => {
+    const theme = localStorage.getItem('color-theme');
+    setIsDarkTheme(theme === 'dark');
+  }, []);
 
   const toggleTheme = () => {
     const theme = localStorage.getItem('color-theme');
     if (theme === 'dark') {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('color-theme', 'light');
+      setIsDarkTheme(false);
     } else {
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
+      setIsDarkTheme(true);
     }
   };
 
@@ -55,7 +65,7 @@ const Header = (props: HeaderProps) => {
               alt="github icon"
               className="m-0"
               height={44}
-              src={gitHubIcon}
+              src={isDarkTheme ? gitHubWhiteIcon : gitHubIcon}
               style={{ maxWidth: '44px' }}
               width={44}
             />
