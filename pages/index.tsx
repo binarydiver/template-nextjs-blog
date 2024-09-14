@@ -64,26 +64,31 @@ const Home = (props: HomeProps) => {
         <meta name="description" content="Next.js Blog Template Website" />
       </Head>
 
-      <ul
-        role="list"
-        className="divide-y divide-slate-400 list-none marker:text-slate-300"
-      >
+      <ul role="list" className="divide-y list-none my-2 pe-[1.625rem]">
         {articleMatters.map(articleMatter => (
-          <li key={articleMatter.writtenAt} className="pt-2">
-            <Link className="no-underline" href={`${articleMatter.slug}`}>
-              <header className="underline underline-offset-4">
-                {articleMatter.coverImagePath && (
-                  <Image
-                    src={articleMatter.coverImagePath}
-                    width={200}
-                    height={200}
-                    alt="cover image"
-                  />
-                )}
-                {articleMatter.writtenAt} :: {articleMatter.title}
-              </header>
-              <p>{articleMatter.description}</p>
-            </Link>
+          <li key={articleMatter.writtenAt}>
+            <article className="flex py-2">
+              <div>
+                <Link className="no-underline" href={`${articleMatter.slug}`}>
+                  {articleMatter.coverImagePath && (
+                    <Image
+                      src={articleMatter.coverImagePath}
+                      width={200}
+                      height={200}
+                      alt="cover image"
+                    />
+                  )}
+                </Link>
+              </div>
+              <div>
+                <Link className="no-underline" href={`${articleMatter.slug}`}>
+                  <header className="underline underline-offset-4">
+                    {articleMatter.writtenAt} :: {articleMatter.title}
+                  </header>
+                </Link>
+                <p className="mt-2 mb-0">{articleMatter.description}</p>
+              </div>
+            </article>
           </li>
         ))}
       </ul>

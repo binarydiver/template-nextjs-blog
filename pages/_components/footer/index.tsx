@@ -1,8 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="max-w-5xl mx-auto p-2 text-center">
-      <p>© 2024 Author</p>
-    </footer>
+    <footer className="border-t mt-auto p-4 text-center">© 2024 Author</footer>
   );
 };
 

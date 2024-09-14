@@ -7,7 +7,7 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
       </Head>
-      <body className="antialiased">
+      <body className="antialiased prose dark:prose-invert max-w-full">
         <Main />
         <NextScript />
       </body>

@@ -11,7 +11,7 @@ const nextConfig = {
   },
   output: 'export',
   reactStrictMode: true,
-  ...withMarkdoc()({
+  ...withMarkdoc({ mode: 'static' })({
     pageExtensions: ['md', 'mdoc', 'jsx', 'tsx'],
   }),
   async headers() {

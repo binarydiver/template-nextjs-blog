@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { FC } from 'react';
 import { BLOG_TITLE } from '../../_lib/constants';
 import Footer from '../footer';
-import Navigation from '../navigation';
+import Header from '../header';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -13,16 +13,14 @@ const Layout: FC<LayoutProps> = props => {
   const { children, title } = props;
 
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Head>
         <title>{title}</title>
       </Head>
-      <Navigation title={BLOG_TITLE} />
-      <main className="max-w-5xl mx-auto prose dark:prose-invert">
-        {children}
-      </main>
+      <Header title={BLOG_TITLE} />
+      <main className="max-w-screen-lg mx-auto w-full p-4">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
