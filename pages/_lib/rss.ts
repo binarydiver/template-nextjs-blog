@@ -1,11 +1,12 @@
 import fs from 'fs';
 import RSS from 'rss';
 import { ArticleMatter } from '..';
+import { PATH_PREFIX_PROD } from './constants';
 
 const generateRssFeed = async (articleMatters: ArticleMatter[]) => {
   const siteOrigin =
     process.env.NODE_ENV === 'production'
-      ? 'https://binarydiver.github.io/template-nextjs-blog/'
+      ? `https://binarydiver.github.io${PATH_PREFIX_PROD}`
       : 'http://localhost:3000';
 
   const feedOptions = {
