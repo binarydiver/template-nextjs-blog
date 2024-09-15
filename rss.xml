@@ -9,23 +9,23 @@
             <link>https://binarydiver.github.io/template-nextjs-blog</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 15 Sep 2024 08:38:23 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Sep 2024 08:45:33 GMT</lastBuildDate>
         <atom:link href="https://binarydiver.github.io/template-nextjs-blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 15 Sep 2024 08:38:23 GMT</pubDate>
+        <pubDate>Sun, 15 Sep 2024 08:45:33 GMT</pubDate>
         <copyright><![CDATA[Copyright 2024, Author]]></copyright>
-        <item>
-            <title><![CDATA[Explain cat command in Japanese]]></title>
-            <description><![CDATA[Explain cat command in Japanese.]]></description>
-            <link>https://binarydiver.github.io/template-nextjs-blog/articles/2024/09/12/explain_cat_command_jp</link>
-            <guid isPermaLink="true">https://binarydiver.github.io/template-nextjs-blog/articles/2024/09/12/explain_cat_command_jp</guid>
-            <pubDate>Thu, 12 Sep 2024 03:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[Explain cat command in Korean]]></title>
             <description><![CDATA[Explain cat command in Korean.]]></description>
             <link>https://binarydiver.github.io/template-nextjs-blog/articles/2024/09/11/explain_cat_command_ko</link>
             <guid isPermaLink="true">https://binarydiver.github.io/template-nextjs-blog/articles/2024/09/11/explain_cat_command_ko</guid>
             <pubDate>Wed, 11 Sep 2024 02:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Explain cat command in Japanese]]></title>
+            <description><![CDATA[Explain cat command in Japanese.]]></description>
+            <link>https://binarydiver.github.io/template-nextjs-blog/articles/2024/09/12/explain_cat_command_jp</link>
+            <guid isPermaLink="true">https://binarydiver.github.io/template-nextjs-blog/articles/2024/09/12/explain_cat_command_jp</guid>
+            <pubDate>Thu, 12 Sep 2024 03:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Explain cat command in English]]></title>
