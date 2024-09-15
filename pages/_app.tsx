@@ -20,9 +20,12 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     Component.getLayout ??
     (page => {
       const title = page.props.markdoc?.frontmatter.title ?? BLOG_TITLE;
+      const description =
+        page.props.markdoc?.frontmatter.description ??
+        'Next.js Blog Template Website';
 
       return (
-        <Layout title={title}>
+        <Layout title={title} description={description}>
           {page}
           <hr />
           {page.props.markdoc && (

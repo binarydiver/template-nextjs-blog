@@ -1,12 +1,10 @@
 import FastGlob from 'fast-glob';
 import fs from 'fs';
 import matter from 'gray-matter';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GetStaticProps } from 'next/types';
 import path from 'path';
-import { BLOG_TITLE } from './_lib/constants';
 import generateRssFeed from './_lib/rss';
 
 export type ArticleMatter = {
@@ -64,11 +62,6 @@ const Home = (props: HomeProps) => {
 
   return (
     <>
-      <Head>
-        <title>{BLOG_TITLE}</title>
-        <meta name="description" content="Next.js Blog Template Website" />
-      </Head>
-
       <ul role="list" className="divide-y list-none my-2 ps-1 pe-1">
         {articleMatters.map(articleMatter => (
           <li className="m-0" key={articleMatter.writtenAt}>

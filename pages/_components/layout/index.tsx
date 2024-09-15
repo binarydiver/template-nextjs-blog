@@ -6,16 +6,18 @@ import Header from '../header';
 
 type LayoutProps = {
   children: React.ReactNode;
+  description: string;
   title: string;
 };
 
 const Layout: FC<LayoutProps> = props => {
-  const { children, title } = props;
+  const { children, title, description } = props;
 
   return (
     <div className="flex flex-col h-screen">
       <Head>
         <title>{title}</title>
+        <meta name="description" content={description} />
       </Head>
       <Header title={BLOG_TITLE} />
       <main className="max-w-screen-lg mx-auto w-full p-4">{children}</main>
