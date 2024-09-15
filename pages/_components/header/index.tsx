@@ -53,7 +53,6 @@ const Header = (props: HeaderProps) => {
               className="m-0"
               height={44}
               src={rssIcon}
-              style={{ maxWidth: '44px' }}
               width={44}
             />
           </Link>
@@ -64,9 +63,8 @@ const Header = (props: HeaderProps) => {
             <Image
               alt="github icon"
               className="m-0"
-              height={44}
+              height={43}
               src={isDarkTheme ? gitHubWhiteIcon : gitHubIcon}
-              style={{ maxWidth: '44px' }}
               width={44}
             />
           </Link>

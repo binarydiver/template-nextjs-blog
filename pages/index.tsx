@@ -80,8 +80,9 @@ const Home = (props: HomeProps) => {
                       className="m-0 me-4"
                       src={articleMatter.coverImagePath}
                       width={200}
-                      height={200}
+                      height={133}
                       alt="cover image"
+                      priority={true}
                     />
                   )}
                 </Link>
