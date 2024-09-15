@@ -1,16 +1,15 @@
 import Head from 'next/head';
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import { BLOG_TITLE } from '../../_lib/constants';
-import Footer from '../footer';
-import Header from '../header';
+import Footer from './footer';
+import Header from './header';
 
-type LayoutProps = {
-  children: React.ReactNode;
+interface ArticleLayoutProps extends PropsWithChildren {
   description: string;
   title: string;
-};
+}
 
-const Layout: FC<LayoutProps> = props => {
+const ArticleLayout: FC<ArticleLayoutProps> = props => {
   const { children, title, description } = props;
 
   return (
@@ -26,6 +25,4 @@ const Layout: FC<LayoutProps> = props => {
   );
 };
 
-export default Layout;
-
-export const revalidate = 3600;
+export default ArticleLayout;
