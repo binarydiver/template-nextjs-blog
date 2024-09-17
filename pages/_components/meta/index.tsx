@@ -20,7 +20,9 @@ const Meta = (props: MetaProps) => {
     slug = `articles/${matter.writtenAt
       .replace(/[-]/g, '/')
       .substring(0, 10)}/${matter.docName}`;
-    coverImagePath = `${slug}/${matter.coverImageName}`;
+    coverImagePath = matter.coverImageName
+      ? `${slug}/${matter.coverImageName}`
+      : null;
     keywords = keywords.concat(matter.keywords);
   }
 
