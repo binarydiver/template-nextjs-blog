@@ -27,6 +27,9 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     dot: false,
     onlyFiles: true,
   });
+
+  articlesPaths.sort().reverse();
+
   const articleMatters = articlesPaths.map(articlePath => {
     const articlePathElements = path.parse(articlePath);
     const slug = articlePath.slice(0, -1 * articlePathElements.ext.length);
@@ -46,7 +49,6 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       updatedAt,
     };
   });
-  articleMatters.sort().reverse();
 
   generateRssFeed(articleMatters);
 
