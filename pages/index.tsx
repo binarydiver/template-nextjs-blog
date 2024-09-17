@@ -66,11 +66,11 @@ const Home = (props: HomeProps) => {
         {articleMatters.map(articleMatter => (
           <li className="m-0" key={articleMatter.writtenAt}>
             <article className="flex py-4">
-              <div>
+              <div className="me-4">
                 <Link className="no-underline" href={`${articleMatter.slug}`}>
                   {articleMatter.coverImagePath && (
                     <Image
-                      className="m-0 me-4"
+                      className="m-0"
                       src={articleMatter.coverImagePath}
                       width={200}
                       height={133}
@@ -82,7 +82,7 @@ const Home = (props: HomeProps) => {
               </div>
               <div>
                 <Link className="no-underline" href={`${articleMatter.slug}`}>
-                  <header className="underline underline-offset-4">
+                  <header className="underline underline-offset-4 mt-[-0.5rem]">
                     {articleMatter.writtenAt.substring(0, 10)} ::{' '}
                     {articleMatter.title}
                   </header>

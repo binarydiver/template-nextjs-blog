@@ -33,7 +33,7 @@ const Header = (props: HeaderProps) => {
 
   return (
     <nav className="border-b p-4">
-      <div className="flex max-w-screen-lg m-auto">
+      <div className="flex flex-col sm:flex-row max-w-screen-lg m-auto">
         <div className="flex-auto">
           <Link className="no-underline" href={'/'}>
             <h1 className="leading-normal m-0">{title}</h1>
@@ -50,7 +50,7 @@ const Header = (props: HeaderProps) => {
           <Link href="/rss.xml">
             <Image
               alt="rss icon"
-              className="m-0"
+              className="m-0 min-w-[44px]"
               height={44}
               src={rssIcon}
               width={44}
@@ -62,7 +62,7 @@ const Header = (props: HeaderProps) => {
           >
             <Image
               alt="github icon"
-              className="m-0"
+              className="m-0 min-w-[44px]"
               height={43}
               src={isDarkTheme ? gitHubWhiteIcon : gitHubIcon}
               width={44}
