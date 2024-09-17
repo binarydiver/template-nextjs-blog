@@ -1,4 +1,8 @@
-import { IS_ENV_PROD, PATH_PREFIX_PROD } from '@/pages/_lib/constants';
+import {
+  IS_ENV_PROD,
+  PATH_PREFIX_PROD,
+  SITE_URL,
+} from '@/pages/_lib/constants';
 import { Noto_Sans_KR } from 'next/font/google';
 import Head from 'next/head';
 import { FC } from 'react';
@@ -20,6 +24,26 @@ const RootLayout: FC<RootLayoutProps> = props => {
           type="image/x-icon"
           href={`${IS_ENV_PROD ? PATH_PREFIX_PROD : ''}/favicon.ico`}
         />
+        <meta name="author" content="Jason Park, jason@binarydiver.com" />
+        <meta name="color-scheme" content="dark light" />
+        <meta
+          key="keywords"
+          name="keywords"
+          content="blog, template, programming, it, tech"
+        />
+
+        <meta
+          key="og:title"
+          name="og:title"
+          content="Next.js Blog Template | Home"
+        />
+        <meta
+          key="og:description"
+          name="og:description"
+          content="Next.js Blog Template Website"
+        />
+        <meta key="og:url" name="og:url" content={SITE_URL} />
+        <meta name="og:site_name" content="Next.js Blog Template" />
       </Head>
       {children}
     </div>

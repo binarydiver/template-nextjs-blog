@@ -1,7 +1,9 @@
 ---
+docName: 'explain_cat_command_jp'
 title: 'Explain cat command in Japanese'
 description: 'Explain cat command in Japanese.'
 coverImageName: 'mikhail-vasilyev-IFxjDdqK_0U-unsplash.jpg'
+keywords: ['posix cat', 'linux cat', 'jp']
 writtenAt: '2024-09-12 12:00'
 updatedAt: '2024-09-12 12:00'
 ---

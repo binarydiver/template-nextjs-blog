@@ -1,7 +1,9 @@
 ---
+docName: 'explain_man_command_en'
 title: 'Explain cat command in English'
 description: 'Explain cat command in English.'
 coverImageName: 'marnhe-du-plooy-U6u_A5z6mME-unsplash.jpg'
+keywords: ['posix cat', 'linux cat', 'en']
 writtenAt: '2024-09-10 10:00'
 updatedAt: '2024-09-10 10:00'
 ---
