@@ -1,7 +1,7 @@
 import {
+  BASE_URL,
   IS_ENV_PROD,
   PATH_PREFIX_PROD,
-  SITE_URL,
 } from '@/pages/_lib/constants';
 import { Noto_Sans_KR } from 'next/font/google';
 import Head from 'next/head';
@@ -42,7 +42,7 @@ const RootLayout: FC<RootLayoutProps> = props => {
           name="og:description"
           content="Next.js Blog Template Website"
         />
-        <meta key="og:url" name="og:url" content={SITE_URL} />
+        <meta key="og:url" name="og:url" content={BASE_URL} />
         <meta name="og:site_name" content="Next.js Blog Template" />
       </Head>
       {children}

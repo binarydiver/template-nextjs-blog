@@ -1,4 +1,4 @@
-import { BLOG_TITLE, SITE_URL } from '@/pages/_lib/constants';
+import { BASE_URL, BLOG_TITLE } from '@/pages/_lib/constants';
 import Head from 'next/head';
 
 type MetaProps = {
@@ -47,10 +47,10 @@ const Meta = (props: MetaProps) => {
           <meta
             key="og:image"
             name="og:image"
-            content={`${SITE_URL}/${coverImagePath}`}
+            content={`${BASE_URL}/${coverImagePath}`}
           />
         )}
-        <meta key="og:url" name="og:url" content={`${SITE_URL}/${slug}`} />
+        <meta key="og:url" name="og:url" content={`${BASE_URL}/${slug}`} />
       </Head>
     </>
   );
