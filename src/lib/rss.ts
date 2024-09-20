@@ -1,6 +1,6 @@
 import fs from 'fs';
 import RSS from 'rss';
-import { ArticleMatter } from '..';
+import { ArticleMatter } from '../pages';
 import { PATH_PREFIX_PROD } from './constants';
 
 const generateRssFeed = async (articleMatters: ArticleMatter[]) => {

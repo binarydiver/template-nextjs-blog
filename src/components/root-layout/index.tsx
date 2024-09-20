@@ -1,8 +1,4 @@
-import {
-  BASE_URL,
-  IS_ENV_PROD,
-  PATH_PREFIX_PROD,
-} from '@/pages/_lib/constants';
+import { BASE_URL, IS_ENV_PROD, PATH_PREFIX_PROD } from '@/lib/constants';
 import { Noto_Sans_KR } from 'next/font/google';
 import Head from 'next/head';
 import { FC } from 'react';
@@ -17,7 +13,7 @@ const RootLayout: FC<RootLayoutProps> = props => {
   const { children } = props;
 
   return (
-    <div className={`${notoSansKr.className}`}>
+    <>
       <Head>
         <link
           rel="icon"
@@ -45,8 +41,8 @@ const RootLayout: FC<RootLayoutProps> = props => {
         <meta key="og:url" name="og:url" content={BASE_URL} />
         <meta name="og:site_name" content="Next.js Blog Template" />
       </Head>
-      {children}
-    </div>
+      <div className={notoSansKr.className}>{children}</div>
+    </>
   );
 };
 

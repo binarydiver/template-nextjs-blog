@@ -5,8 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GetStaticProps } from 'next/types';
 import path from 'path';
-import generateRssFeed from './_lib/rss';
-import generateSitemap from './_lib/sitemap';
+import generateRssFeed from '../lib/rss';
+import generateSitemap from '../lib/sitemap';
 
 export type ArticleMatter = {
   title: string;
@@ -22,12 +22,15 @@ type HomeProps = {
 };
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const ARTICLES_DIR = path.join(process.cwd(), 'pages');
-  const articlesPaths = await FastGlob.glob('articles/**/*.md', {
-    cwd: ARTICLES_DIR,
-    dot: false,
-    onlyFiles: true,
-  });
+  const PAGES_DIR = path.join(process.cwd(), 'src/pages');
+  const articlesPaths = await FastGlob.glob(
+    ['articles/**/*.md', '!articles/_draft/*'],
+    {
+      cwd: PAGES_DIR,
+      dot: false,
+      onlyFiles: true,
+    }
+  );
 
   articlesPaths.sort().reverse();
 
@@ -35,7 +38,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     const articlePathElements = path.parse(articlePath);
     const slug = articlePath.slice(0, -1 * articlePathElements.ext.length);
     const source = fs.readFileSync(
-      path.join(process.cwd(), 'pages/', articlePath),
+      path.join(process.cwd(), 'src/pages/', articlePath),
       'utf8'
     );
     const { data } = matter(source);

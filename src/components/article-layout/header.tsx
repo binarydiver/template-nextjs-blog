@@ -1,6 +1,6 @@
-import gitHubWhiteIcon from '@/public/github-mark-white.svg';
-import gitHubIcon from '@/public/github-mark.svg';
-import rssIcon from '@/public/rss-512.png';
+import gitHubWhiteIcon from '@public/github-mark-white.svg';
+import gitHubIcon from '@public/github-mark.svg';
+import rssIcon from '@public/rss-512.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';

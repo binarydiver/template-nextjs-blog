@@ -1,4 +1,4 @@
-import { BASE_URL, BLOG_TITLE } from '@/pages/_lib/constants';
+import { BASE_URL, BLOG_TITLE } from '@/lib/constants';
 import Head from 'next/head';
 
 type MetaProps = {

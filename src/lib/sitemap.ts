@@ -1,6 +1,6 @@
 import { createWriteStream } from 'node:fs';
 import { EnumChangefreq, SitemapItem, SitemapStream } from 'sitemap';
-import { ArticleMatter } from '..';
+import { ArticleMatter } from '../pages';
 import { BASE_URL, PATH_PREFIX_PROD } from './constants';
 
 const generateSitemap = async (articleMatters: ArticleMatter[]) => {
