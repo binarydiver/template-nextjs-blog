@@ -1,5 +1,16 @@
 # Template for Blog with Next.js
 
-Next.js + Tailwind CSS + Markdoc
+Developed by Next.js + Tailwind CSS + Markdoc
 
-`npm run deploy` for publish github page.
+## Publish to GitHub Page
+
+```bash
+npm run deploy
+```
+
+## Support functions:
+
+- Toggle light/dark theme
+- Meta tag per page
+- Generate rss.xml at build time
+- Generate sitemap.xml at build time
