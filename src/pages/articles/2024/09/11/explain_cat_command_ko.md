@@ -10,6 +10,8 @@ updatedAt: '2024-09-11 11:00'
 
 # cat
 
+{% image src="./ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg" width=340 height=200 alt="cat" /%}
+
 > 파일 출력 및 연결.
 > 더 많은 정보: <https://manned.org/cat.1posix>.
 

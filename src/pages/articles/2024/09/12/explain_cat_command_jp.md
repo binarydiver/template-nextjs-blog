@@ -10,6 +10,8 @@ updatedAt: '2024-09-12 12:00'
 
 # cat
 
+{% image src="./mikhail-vasilyev-IFxjDdqK_0U-unsplash.jpg" width=340 height=200 alt="cat" /%}
+
 > ファイルの出力と連結を行います。
 > 詳しくはこちら: <https://manned.org/cat.1posix>
 

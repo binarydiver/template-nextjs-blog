@@ -10,6 +10,8 @@ updatedAt: '2024-09-10 10:00'
 
 # cat
 
+{% image src="./marnhe-du-plooy-U6u_A5z6mME-unsplash.jpg" width=340 height=200 alt="cat" /%}
+
 > Print and concatenate files.
 > More information: <https://manned.org/cat.1posix>.
 
