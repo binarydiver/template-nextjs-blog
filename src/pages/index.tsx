@@ -69,15 +69,15 @@ const Home = (props: HomeProps) => {
 
   return (
     <>
-      <ul role="list" className="divide-y list-none my-2 ps-1 pe-1">
+      <ul role="list" className="not-prose divide-y list-none my-2 ps-1 pe-1">
         {articleMatters.map(articleMatter => (
-          <li className="m-0" key={articleMatter.writtenAt}>
+          <li className="not-prose m-0" key={articleMatter.writtenAt}>
             <article className="flex py-4">
               <div className="me-4">
                 <Link className="no-underline" href={`${articleMatter.slug}`}>
                   {articleMatter.coverImagePath && (
                     <Image
-                      className="m-0"
+                      className="not-prose m-0"
                       src={articleMatter.coverImagePath}
                       width={200}
                       height={133}

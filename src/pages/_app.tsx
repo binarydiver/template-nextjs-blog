@@ -1,6 +1,6 @@
+import '@/styles/globals.css';
 import Giscus from '@giscus/react';
 import { MarkdocNextJsPageProps } from '@markdoc/next.js';
-import '@styles/globals.css';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
@@ -20,7 +20,7 @@ type AppPropsWithLayout = AppProps<MarkdocNextJsPageProps> & {
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ??
-    (page => {
+    ((page: ReactElement<MarkdocNextJsPageProps>) => {
       const frontMatter = page.props.markdoc?.frontmatter;
 
       return (

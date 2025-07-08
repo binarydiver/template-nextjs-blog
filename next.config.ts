@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
 import withMarkdoc from '@markdoc/next.js';
+import type { NextConfig } from 'next';
 
 const isEnvProd = process.env.NODE_ENV === 'production';
 const dynamicPath = isEnvProd ? '/template-nextjs-blog' : '';
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   assetPrefix: dynamicPath,
   basePath: dynamicPath,
   images: {
